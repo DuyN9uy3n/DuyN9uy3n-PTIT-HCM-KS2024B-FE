@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 8</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="name">Họ và tên:</label>
+          </td>
+          <td>
+            <input type="text" id="name" name="name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">Ngày sinh:</label>
+          </td>
+          <td>
+            <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Giới tính:</label>
+          </td>
+          <td>
+            <input type="radio" id="male" name="gender" value="Nam" />
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ" />
+            <label for="female">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Số điện thoại:</label>
+          </td>
+          <td>
+            <input type="text" id="phone" name="phone" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td>
+            <input type="email" id="email" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="address">Địa chỉ:</label>
+          </td>
+          <td>
+            <textarea
+              id="address"
+              name="address"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="role">Vai tro trong nhom:</label>
+            </td>
+            <td>
+                <select name="role" id="role">
+                    <option  value="Thanh vien">Thanh vien</option>
+                    <option value="Quan tri vien">Quan tri vien</option>
+                    <option value="Nhom truong">Nhom truong</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="hobbies">So thich:</label></td>
+            <td><input id="hobbies" name="hobbies" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="skills">Ky nang:</label></td>
+           <td><textarea name="skills" id="skills" rows="2"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="time">Thoi gian ranh:</label>
+            </td>
+            <td>
+                <label for="time">Sang</label>
+                <input type="checkbox" name="time" id="time" value="Sang">
+                <label for="time">Chieu</label>
+                <input type="checkbox" name="time" id="time" value="Chieu">
+                <label for="time">Toi</label>
+                <input type="checkbox" name="time" id="time" value="Toi">
+            </td>
+            <tr>
+                <td><label for="rea">Ly do tham gia nhom:</label></td>
+                <td><textarea name="rea" id="rea" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="color">Mau yeu thich:</label></td>
+               <td><input type="color" id="color" name="color" value="#000000"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dky">Dang ky nhan bang tin:</label>
+                </td>
+                <td><input type="checkbox" name="dky" id="dky">Co</td>
+            </tr>
+            <tr>
+                <td>
+                  <label for="tb">Nhan thong bao qua mail:</label>
+                </td>
+                <td>
+                  <input type="radio" id="Email" name="tb" value="Email" />
+                  <label for="Email">Email</label>
+                  <input type="radio" id="SMS" name="tb" value="SMS" />
+                  <label for="SMS">SMS</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Dang ky thanh vien</button>
+                </td>
+            </tr>
+        </tr>
+    </form>
+  </body>
+</html>

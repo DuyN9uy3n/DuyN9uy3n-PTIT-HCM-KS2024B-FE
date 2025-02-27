@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 10</title>
+</head>
+<body>
+    <form>
+        <table>
+          <tr>
+            <td>
+              <label for="name">Họ và tên:</label>
+            </td>
+            <td>
+              <input type="text" id="name" name="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Ngày sinh:</label>
+            </td>
+            <td>
+              <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Giới tính:</label>
+            </td>
+            <td>
+              <input type="radio" id="male" name="gender" value="Nam" />
+              <label for="male">Nam</label>
+              <input type="radio" id="female" name="gender" value="Nữ" />
+              <label for="female">Nữ</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="sdt">So dien thoai:</label>
+        
+            </td>
+            <td><input type="number" name="sdt" id="sdt" ></td>
+            <tr>
+                <td><label for="mail">Email:</label></td>
+                <td><input type="email" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td><label for="Cty">Ten Cong Ty:</label></td>
+                <td><input type="text" name="Cty" id="Cty"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="role">Vai tro trong cong ty:</label>
+                </td>
+                <td>
+                    <select name="role" id="role">
+                        <option value="Giam doc dieu hanh CEO">Giam doc dieu hanh CEO</option>
+                        <option value="Nhan vien">Nhan vien</option>
+                    </select>
+                </td>
+                <tr>
+                    <td><label for="quy mo">Quy mo cong ty:</label></td>
+                    <td>
+                        <select name="quy mo" id="quy mo">
+                            <option value="doanh nghiep nho">doanh nghiep nho</option>
+                            <option value="danh nghiep lon">doanh nghiep lon</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="job">Nganh nghe cong ty:</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td><label for="rea">Ly do tham gia cau lac bo:</label></td>
+                <td><textarea name="rea" id="rea" rows="2" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="exp">Kinh nghiem lanh dao:</label></td>
+                <td><textarea name="exp" id="exp" rows="2" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="muctieu">Muc tieu tham gia cau lac bo:</label></td>
+                <td><textarea name="muctieu" id="muctieu" rows="2" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="event">Chuong trinh su kien mong muon tham gia:</label></td>
+                <td>
+                    <input type="checkbox" id="event" name="event">
+                    <label for="event">Networking</label>
+                    <input type="checkbox" id="event" name="event">
+                    <label for="event">Workshops</label>
+                    <input type="checkbox" id="event" name="event">
+                    <label for="event">Hoi thao</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dangky">Dang ky nhan ban tin:</label></td>
+                <td><input type="checkbox" name="dangky" id="dangky">Co</td>
+            </tr>
+            <tr>
+                <td><button>Dang ky hoi vien</button></td>
+            </tr>
+            
+          </tr>
+</body>
+</html>
