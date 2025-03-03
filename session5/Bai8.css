@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  font-size: 24px;
+  color: #222;
+  font-weight: bold;
+}
+hr {
+  border: 1px dashed #ccc;
+  margin-bottom: 20px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia thành hai cột */
+  gap: 20px;
+}
+.article {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.article img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.content {
+  flex-grow: 1;
+}
+.content p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+.content h3 {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  margin-top: 5px;
+}

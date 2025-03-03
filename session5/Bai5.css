@@ -1,0 +1,17 @@
+h2 {
+  font-family: "Gill Sans", sans-serif;
+  color: rgb(33, 75, 138);
+  font-weight: 500;
+}
+
+#a {
+  font-family: "Gill Sans", sans-serif;
+}
+
+#b {
+  font-family: "Gill Sans", sans-serif;
+  box-shadow: rgb(255, 183, 2) -5px 0px;
+  background-color: rgb(241, 209, 148);
+  padding: 20px;
+  margin-top: 20px;
+}

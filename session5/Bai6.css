@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#a {
+  background-color: rgb(224, 217, 217);
+  color: red;
+}
+
+#b {
+  box-shadow: rgb(0, 255, 51) -5px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+  margin-left: 30px;
+}
+
+#c {
+  color: brown;
+}
+#d {
+  color: red;
+}
+#e {
+  color: blue;
+}
+
+.button {
+  background-color: #04aa6d;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 8px;
+  border: none;
+}
+
+.ABC {
+  background-color: rgb(204, 201, 201);
+}
