@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #111721;
+  padding: 20px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  color: #ddd;
+}
+
+.intro {
+  background-color: #eaeaea;
+  padding: 50px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 30px;
+  min-height: 180px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.intro p {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Dự án */
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Nút dự án */
+.project-item {
+  background-color: #111721;
+  color: white;
+  padding: 15px 0;
+  text-decoration: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24%;
+  height: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #eaeaea;
+  padding: 15px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+footer a:hover {
+  color: #eaeaea;
+  text-align: center;
+}

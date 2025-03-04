@@ -1,0 +1,41 @@
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+#menu-item {
+  color: white;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: large;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#menu-item:hover {
+  color: #ffdd57;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(21, 60, 216) 0px 0px 0px 3px;
+}
+
+table {
+  margin: 40px auto;
+}
+
+footer {
+  background-color: #aaa;
+  color: white;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
