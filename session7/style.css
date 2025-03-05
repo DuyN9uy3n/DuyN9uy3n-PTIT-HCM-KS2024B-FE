@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu img {
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+.profile img {
+  width: 500px;
+  height: 300px;
+}
+.body {
+  margin: 10px;
+  background-color: white;
+  width: 440px;
+}
+.profile h1 {
+  font-size: 25px;
+}
+.profile h3 {
+  color: rgb(31, 20, 75);
+}

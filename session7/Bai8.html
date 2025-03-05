@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Card UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fc;
+      }
+
+      .card {
+        width: 400px; /* Tăng kích thước card */
+        background: white;
+        padding: 25px; /* Tăng padding */
+        border-radius: 15px; /* Bo tròn hơn */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Tăng độ nổi */
+      }
+
+      h3 {
+        font-size: 22px; /* Tăng kích thước tiêu đề */
+        margin-bottom: 10px;
+      }
+
+      .status {
+        display: inline-block;
+        background: #fce8d4;
+        color: #b67232;
+        font-size: 13px; /* Điều chỉnh kích thước font */
+        padding: 6px 14px; /* Điều chỉnh padding */
+        border-radius: 7px; /* Bo tròn hơn */
+        margin-top: 8px;
+        font-weight: bold;
+      }
+
+      .client,
+      .budget {
+        display: flex;
+        align-items: center;
+        margin-top: 12px; /* Tăng khoảng cách */
+        font-size: 15px; /* Tăng kích thước font */
+        color: #333;
+      }
+
+      .client i,
+      .budget i {
+        margin-right: 10px; /* Tăng khoảng cách */
+        color: #6c757d;
+        width: 18px; /* Đảm bảo kích thước icon đồng đều */
+        text-align: center;
+      }
+
+      .progress-bar {
+        height: 8px; /* Tăng độ dày */
+        background: #f4f1ec;
+        border-radius: 7px; /* Bo tròn hơn */
+        overflow: hidden;
+        margin: 12px 0; /* Điều chỉnh khoảng cách */
+      }
+
+      .progress-bar div {
+        height: 100%;
+        width: 76%;
+        background: #d68938;
+      }
+
+      .dates {
+        font-size: 15px; /* Tăng kích thước font */
+        margin-top: 12px; /* Tăng khoảng cách */
+        color: #333;
+      }
+
+      .dates p strong {
+        font-weight: bold;
+      }
+
+      .team {
+        position: relative;
+        margin-top: 18px; /* Tăng khoảng cách */
+      }
+
+      .team img {
+        width: 40px; /* Tăng kích thước ảnh */
+        height: 40px; /* Tăng kích thước ảnh */
+        border-radius: 50%;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+      }
+
+      .team img:nth-child(1) {
+        left: 0;
+        z-index: 2;
+      }
+
+      .team img:nth-child(2) {
+        left: 25px; /* Điều chỉnh vị trí */
+        z-index: 1;
+      }
+
+      .tasks {
+        display: flex;
+        align-items: center;
+        font-size: 15px; /* Tăng kích thước font */
+        margin-top: 12px; /* Tăng khoảng cách */
+        color: #333;
+        justify-content: flex-end; /* Đẩy tasks sang phải */
+      }
+
+      .tasks i {
+        margin-right: 10px; /* Tăng khoảng cách */
+        color: #6c757d;
+        width: 18px; /* Đảm bảo kích thước icon đồng đều */
+        text-align: center;
+      }
+
+      .tasks strong {
+        font-size: 17px; /* Tăng kích thước font */
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .progress-text {
+        font-size: 15px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Water resistant mosquito...</h3>
+      <span class="status">INACTIVE</span>
+
+      <div class="client">
+        <i class="fas fa-user"></i>
+        <span>Client: <a href="#">Monsters.Inc</a></span>
+      </div>
+
+      <div class="budget">
+        <i class="fas fa-credit-card"></i>
+        <span>Budget: <strong>10,500$</strong></span>
+      </div>
+      <br />
+
+      <div class="progress-container">
+        <p class="progress-text">Progress</p>
+        <p class="progress-text" style="text-align: right">76%</p>
+      </div>
+      <div class="progress-bar">
+        <div></div>
+      </div>
+
+      <div class="dates">
+        <p><strong>Started:</strong> 8th Mar. 2021</p>
+        <p><strong>Deadline:</strong> 15th Sept. 2022</p>
+      </div>
+
+      <div class="team">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1" />
+        <img
+          src="https://randomuser.me/api/portraits/women/2.jpg"
+          alt="User 2"
+        />
+      </div>
+
+      <div class="tasks">
+        <i class="fas fa-list"></i>
+        <strong>125</strong> Task
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(234, 234, 234);
+  color: rgb(35, 22, 81);
+}
+
+h1 {
+  font-family: system-ui;
+  font-size: 48px;
+}
+
+.text {
+  padding: 10px;
+  margin: 10px;
+  line-height: 40px;
+  padding-top: 0px;
+  font-size: 20px;
+  font-family: system-ui;
+}
+.icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.btn-red {
+  background-color: rgb(188, 34, 41);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: larger;
+  border: none;
+}
+
+.btn-white {
+  margin: auto;
+  background-color: rgb(234, 234, 234);
+  color: rgb(35, 22, 81);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: larger;
+}

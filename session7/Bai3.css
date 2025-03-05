@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.editor-pick {
+  width: 52px;
+  height: 52px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.category {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+}
