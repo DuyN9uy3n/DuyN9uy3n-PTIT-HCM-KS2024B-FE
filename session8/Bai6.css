@@ -1,0 +1,45 @@
+body {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.search-container {
+  width: 500px;
+}
+
+.search-bar {
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.search-icon {
+  color: #888;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+.left-icons {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+
+.microphone-icon,
+.camera-icon {
+  color: #d317ca;
+  margin-left: 10px;
+}

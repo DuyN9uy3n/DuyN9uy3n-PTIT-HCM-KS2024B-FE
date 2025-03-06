@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>....</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 40px;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 850px;
+        text-align: left;
+      }
+
+      .section-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        position: relative;
+        display: inline-block;
+        margin-left: 27px;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 2px;
+        background-color: red;
+        margin-top: 5px;
+      }
+
+      .cards {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        gap: 13px;
+        margin-top: 10px;
+      }
+
+      .card {
+        width: 260px;
+        border-radius: 5px;
+        padding: 12px;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .card h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 8px 0;
+      }
+
+      .card p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: red;
+        border: 1px solid red;
+        border-radius: 3px;
+        background: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-title">Ipsum sed dolor</div>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            src="/img/Porsche-Taycan-GTS-2022-cong-suat-manh-me.jpg"
+            alt="..."
+          />
+          <h3>Interdum aenean</h3>
+          <p>
+            Aenean ornare velit lacus, ac varius <br />
+            enim lorem ullamcorper dolore. Proin <br />
+            aliquam facilisis ante interdum. Sed <br />
+            nulla amet lorem feugiat tempus <br />
+            aliquam.
+          </p>
+          <button class="btn">More</button>
+        </div>
+        <div class="card">
+          <img
+            src="/img/Porsche-Taycan-GTS-2022-cong-suat-manh-me.jpg"
+            alt="..."
+          />
+          <h3>Nulla amet dolore</h3>
+          <p>
+            Aenean ornare velit lacus, ac varius <br />
+            enim lorem ullamcorper dolore. Proin <br />
+            aliquam facilisis ante interdum. Sed <br />
+            nulla amet lorem feugiat tempus <br />
+            aliquam.
+          </p>
+          <button class="btn">More</button>
+        </div>
+        <div class="card">
+          <img
+            src="/img/Porsche-Taycan-GTS-2022-cong-suat-manh-me.jpg"
+            alt="..."
+          />
+          <h3>Tempus ullamcorper</h3>
+          <p>
+            Aenean ornare velit lacus, ac varius <br />
+            enim lorem ullamcorper dolore. Proin <br />
+            aliquam facilisis ante interdum. Sed <br />
+            nulla amet lorem feugiat tempus <br />
+            aliquam.
+          </p>
+          <button class="btn">More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
