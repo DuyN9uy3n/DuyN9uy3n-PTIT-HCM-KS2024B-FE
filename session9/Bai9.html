@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai9</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .hero {
+        background: url("https://golfandlife.com.vn/wp-content/uploads/2023/11/Titel.jpg")
+          no-repeat center/cover;
+        color: white;
+        padding: 50px;
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .grid {
+        display: grid;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .row-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: stretch;
+      }
+      .box {
+        padding: 20px;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 200px;
+      }
+      #box1 {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdTNkhW4tk2end0NjYQNVbUUWTQczHyjf-5Q&s")
+          no-repeat center/cover;
+      }
+      #box2 {
+        background: url("https://kientrucvadoisong.net/Upload/News/porsche-viet-nam-gioi-thieu-dong-xe-cayenne-moi.jpg")
+          no-repeat center/cover;
+      }
+      #box3 {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToq-GKm2PU_BMs2ZxqWA0yvMNyhwnQ9sjs3Q&s")
+          no-repeat center/cover;
+      }
+      #box4 {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfVUee64gdwPoNvN6RIl7AqHv9Au8bidBJlwhOrKev4DvfZGNirMCWPMm2lA5pfQbLbY&usqp=CAU")
+          no-repeat center/cover;
+      }
+      #box5 {
+        background: url("https://katavina.com/uploaded/tin/Porsche-Taycan/Porsche-Taycan-GTS-2022-cong-suat-manh-me.jpg")
+          no-repeat center/cover;
+      }
+      .signup {
+        background: darkred;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .signup p {
+        margin-bottom: 10px;
+      }
+      .signup button {
+        padding: 10px 20px;
+        background: white;
+        color: darkred;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      @media (max-width: 768px) {
+        .row,
+        .row-bottom {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>We like balloons</h1>
+        <p>You can find all kinds of balloon related things here.</p>
+      </div>
+
+      <div class="row">
+        <div class="box" id="box1">
+          <h2>Angry people at balloon fiestas</h2>
+          <p>Hot air balloons. A bit weather sensitive.</p>
+        </div>
+        <div class="box" id="box2">
+          <h2>Balloon photos</h2>
+          <p>I have quite a few.</p>
+        </div>
+        <div class="box" id="box3">
+          <h2>Special Shapes</h2>
+          <p>Why are some of them so scary looking?</p>
+        </div>
+      </div>
+
+      <div class="row-bottom">
+        <div class="box" id="box4">
+          <h2>10 things you discover when taking a balloon ride.</h2>
+          <p>Number 8 will AMAZE you.</p>
+        </div>
+        <div class="signup">
+          <p>Sign up for more information about balloons.</p>
+          <button>Sign me up!</button>
+        </div>
+        <div class="box" id="box5">
+          <h2>10 things you discover when taking a balloon ride.</h2>
+          <p>Number 8 will AMAZE you.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

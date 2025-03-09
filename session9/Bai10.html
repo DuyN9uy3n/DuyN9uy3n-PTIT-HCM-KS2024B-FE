@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Authentication UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f0f2f5;
+      }
+
+      .header {
+        background-color: #039be5;
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .web-setup {
+        background-color: white;
+        color: #039be5;
+        border: 1px solid #ddd;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .web-setup:hover {
+        background-color: #e0e0e0;
+      }
+
+      .user-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 10px;
+        background-color: #ddd;
+      }
+
+      .nav-bar {
+        display: flex;
+        background-color: white;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .nav-item {
+        padding: 10px 15px;
+        cursor: pointer;
+        color: #757575;
+        font-size: 14px;
+      }
+
+      .nav-item.active {
+        color: #2196f3;
+        font-weight: bold;
+        border-bottom: 2px solid #2196f3;
+      }
+
+      .nav-item:hover {
+        color: black;
+      }
+
+      .content {
+        padding: 20px;
+        background-color: white;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .search-bar input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        outline: none;
+      }
+
+      .search-bar i {
+        margin-right: 8px;
+        color: #757575;
+      }
+
+      .add-user-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .add-user {
+        background-color: #2196f3;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .add-user:hover {
+        background-color: #1976d2;
+      }
+
+      .refresh-icon {
+        cursor: pointer;
+        color: #757575;
+      }
+
+      .user-list {
+        margin-top: 20px;
+        color: #757575;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Authentication</h1>
+      <div class="header-actions">
+        <button class="web-setup">Web setup</button>
+        <div class="user-icon"></div>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="nav-item active">Users</div>
+      <div class="nav-item">Sign-in method</div>
+      <div class="nav-item">Templates</div>
+      <div class="nav-item">Usage</div>
+    </div>
+
+    <div class="content">
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          placeholder="Search by email address, phone number, or user UID"
+        />
+      </div>
+      <div class="add-user-container">
+        <button class="add-user">Add user</button>
+        <i class="fas fa-sync-alt refresh-icon"></i>
+      </div>
+      <div class="user-list">
+        <p>No users for this project yet</p>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .welcome {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      .welcome h2 {
+        margin-bottom: 10px;
+      }
+
+      .welcome p {
+        margin-bottom: 20px;
+      }
+
+      .welcome button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .welcome button:hover {
+        background-color: #555;
+      }
+
+      .featured-work {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .featured-work h2 {
+        margin-bottom: 20px;
+      }
+
+      .projects {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .project {
+        text-align: center;
+      }
+
+      .placeholder {
+        width: 150px;
+        height: 150px;
+        background-color: #ccc;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .project p {
+        margin: 0;
+      }
+
+      .about-me {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+
+      .about-me h2 {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="welcome">
+      <h2>Welcome to my portfolio website</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
+        ultricies tellus. Duis tristique nulla ex, nec lobortis maximus a.
+      </p>
+      <button>View Portfolio</button>
+    </section>
+
+    <section class="featured-work">
+      <h2>Featured Work</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="placeholder">150 x 150</div>
+          <p>Project 1</p>
+        </div>
+        <div class="project">
+          <div class="placeholder">150 x 150</div>
+          <p>Project 2</p>
+        </div>
+        <div class="project">
+          <div class="placeholder">150 x 150</div>
+          <p>Project 3</p>
+        </div>
+        <div class="project">
+          <div class="placeholder">150 x 150</div>
+          <p>Project 4</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
+        ultricies tellus. Duis tristique nulla ex, nec lobortis maximus a.
+        Integer vel arcu eismod, tincidunt felis at, ultricies felis. Ut
+        imperdiet, elit vel venenatis vulputate, tellus nisi incididunt purus, a
+        tristique velit lacus eget purus.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2023 Portfolio Website</p>
+    </footer>
+  </body>
+</html>

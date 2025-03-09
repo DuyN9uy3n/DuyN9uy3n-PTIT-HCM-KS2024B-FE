@@ -1,0 +1,22 @@
+.parent {
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.parent .child {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent .child:nth-child(1) {
+  background-color: rgb(16, 73, 54);
+}

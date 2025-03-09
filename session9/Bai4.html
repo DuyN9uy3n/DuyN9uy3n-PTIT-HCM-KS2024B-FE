@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1200px;
+        height: 80vh;
+      }
+      .header {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        flex: 0 0 auto;
+        margin-bottom: 10px;
+      }
+      .main {
+        display: flex;
+        flex: 1;
+        min-height: 0;
+      }
+      .sidebar {
+        flex: 0 0 25%;
+        background-color: #2ecc71;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        display: flex;
+        margin-right: 10px;
+      }
+      .content {
+        flex: 0 0 74%;
+        background-color: #e74c3c;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        display: flex;
+      }
+      .footer {
+        background-color: #9b59b6;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        flex: 0 0 auto;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="main">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
