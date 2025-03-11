@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football News</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .carousel {
+        width: 80%;
+        max-width: 900px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      .carousel-item {
+        position: relative;
+        background: url("/img/messi-with-fifa-world-cup-trophy.jpg") no-repeat
+          center center/cover;
+        padding: 20px;
+        color: white;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .category {
+        background: transparent;
+        padding: 5px 10px;
+        border-radius: 2px;
+        border: solid rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        align-self: flex-start;
+      }
+
+      .content {
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .source {
+        font-size: 14px;
+        color: #ddd;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+
+      .description {
+        font-size: 16px;
+        color: #ccc;
+      }
+
+      .carousel-controls {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 10px;
+        background: #e5e7eb;
+      }
+
+      .arrow {
+        background: #000;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+        margin: 0 15px;
+      }
+
+      .arrow:hover {
+        background: #cac4c4;
+      }
+
+      .dots {
+        display: flex;
+        gap: 10px;
+      }
+
+      .dot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: #d1d5db;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .dot.active {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel-item">
+        <div class="category">FOOTBALL</div>
+        <div class="content">
+          <p class="source">Agence France-Presse • 04 June 2023</p>
+          <h1>
+            LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB CONFIRMS
+          </h1>
+          <p class="description">
+            The EuroLeague Finals Top Scorer is the individual award for the
+            player that gained the highest points in the EuroLeague Finals
+          </p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="arrow left-arrow">&larr;</button>
+        <div class="dots">
+          <span class="dot active">1</span>
+          <span class="dot">2</span>
+          <span class="dot">3</span>
+          <span class="dot">4</span>
+        </div>
+        <button class="arrow right-arrow">&rarr;</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #faf0e6;
+        color: #22223b;
+      }
+
+      header {
+        padding: 20px;
+        text-align: right;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #22223b;
+        font-weight: bold;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .hero-content {
+        flex: 2;
+        padding-right: 40px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.8em;
+        margin: 0 0 15px 0;
+        line-height: 1.2;
+        color: #22223b;
+        font-weight: 700;
+      }
+
+      .hero-content p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin: 15px 0 25px 0;
+        color: #333;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #f08080;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: right;
+      }
+
+      .hero-image img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I am John,<br />Creative Technologist</h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          <br />
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam <br />
+          consequat sunt nostrud amet.
+        </p>
+        <a href="#" class="button">Download Resume</a>
+      </div>
+      <div class="hero-image">
+        <img src="/img/messi.jpg" alt="John" />
+      </div>
+    </section>
+  </body>
+</html>

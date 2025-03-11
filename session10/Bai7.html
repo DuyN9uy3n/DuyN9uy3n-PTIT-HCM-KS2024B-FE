@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f9f9f9;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+      }
+
+      /* Carousel (Placeholder) */
+      .carousel {
+        flex: 1;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 400px; /* Chiều cao tạm thời, cần điều chỉnh nếu có nội dung thực */
+        overflow: hidden;
+      }
+
+      /* Recent News */
+      .recent-news {
+        flex: 2;
+        display: flex;
+        gap: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .recent-news h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .news-highlight {
+        flex: 2;
+        position: relative;
+      }
+
+      .highlight-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .highlight-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: rgba(152, 182, 202, 0.8); /* Nền vàng nhạt như mẫu */
+        color: #000;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .highlight-content h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .news-list {
+        padding-top: 50px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        size: 40px;
+        gap: 20px;
+      }
+
+      .news-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        background: #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .news-details .date {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .news-details .title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .more-button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #e0e0e0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-self: center;
+      }
+
+      .more-button:hover {
+        background: #d0d0d0;
+      }
+
+      /* Clubs Ranking */
+      .clubs-ranking {
+        flex: 1;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .clubs-ranking h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .clubs-ranking table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .clubs-ranking th,
+      .clubs-ranking td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      .clubs-ranking th {
+        background: #f5f5f5;
+        font-weight: bold;
+      }
+
+      .clubs-ranking td:first-child {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-align: left;
+      }
+
+      .clubs-ranking td img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+
+      .clubs-ranking tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="recent-news">
+        <div class="news-highlight">
+          <h2>Recent News</h2>
+          <img
+            src="https://cdn.tcdulichtphcm.vn/upload//3-2024/images/2024-07-18/Vo-sy-19-tuoi-doa-pha-ky-luc-Mike-Tyson-duoc-Joshua-boxingre-1721294053-315-width740height518.jpg"
+            alt="Taekwondo Highlight"
+            class="highlight-image"
+          />
+          <div class="highlight-content">
+            <h3>Baku 2023 World Taekwondo Championships</h3>
+          </div>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <img
+              src="https://tinhhoavothuat.com/wp-content/uploads/2023/04/r780658_1296x729_16-9.jpg"
+              alt="Taekwondo"
+            />
+            <div class="news-details">
+              <p class="date">#Pollcar • 87 - 12 July 2023</p>
+              <p class="title">Baku 2023 Taekwondo Championships</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img
+              src="https://www.essentiallysports.com/wp-content/uploads/GettyImages-51763442.jpg"
+              alt="Golf"
+            />
+            <div class="news-details">
+              <p class="date">#Golf_Toni • 20 July 2023</p>
+              <p class="title">Open Championship Royal Golf</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img
+              src="https://static.spin.com/files/2020/12/GettyImages-824459542-1609116054.jpg"
+              alt="Cricket"
+            />
+            <div class="news-details">
+              <p class="date">#Cricket_Toni • 27 July 2023</p>
+              <p class="title">Ireland Tour of England Test 2023</p>
+            </div>
+          </div>
+          <button class="more-button">More →</button>
+        </div>
+      </div>
+
+      <!-- Phần 3: Clubs Ranking -->
+      <div class="clubs-ranking">
+        <h2>Clubs Ranking</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>GP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>F</th>
+              <th>A</th>
+              <th>GD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="" alt="Man City" />
+                Manchester City
+              </td>
+              <td>38</td>
+              <td>29</td>
+              <td>6</td>
+              <td>3</td>
+              <td>99</td>
+              <td>26</td>
+              <td>73</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/800px-Liverpool_FC.svg.png"
+                  alt="Liverpool"
+                />
+                Liverpool
+              </td>
+              <td>38</td>
+              <td>28</td>
+              <td>8</td>
+              <td>2</td>
+              <td>94</td>
+              <td>26</td>
+              <td>68</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                  alt="Chelsea"
+                />
+                Chelsea
+              </td>
+              <td>38</td>
+              <td>21</td>
+              <td>11</td>
+              <td>6</td>
+              <td>76</td>
+              <td>33</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/b/bd/Tottenham_Hotspur_FC.svg/1200px-Tottenham_Hotspur_FC.svg.png"
+                  alt="Tottenham"
+                />
+                Tottenham Hotspur
+              </td>
+              <td>38</td>
+              <td>22</td>
+              <td>5</td>
+              <td>11</td>
+              <td>69</td>
+              <td>40</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="" alt="Arsenal" />
+                Arsenal
+              </td>
+              <td>38</td>
+              <td>22</td>
+              <td>3</td>
+              <td>13</td>
+              <td>61</td>
+              <td>48</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a1/Man_Utd_FC_.svg/1200px-Man_Utd_FC_.svg.png"
+                  alt="Man Utd"
+                />
+                Manchester United
+              </td>
+              <td>38</td>
+              <td>16</td>
+              <td>10</td>
+              <td>12</td>
+              <td>57</td>
+              <td>57</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
