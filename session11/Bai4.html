@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 10px;
+      }
+
+      .head {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .head1 {
+        background-color: orange;
+        height: 100px;
+        width: 49%;
+        margin-right: 10px;
+      }
+
+      .head2 {
+        background-color: orange;
+        height: 100px;
+        width: 49%;
+        margin-left: 10px;
+      }
+
+      .bodyA {
+        background-color: rgb(218, 236, 0);
+        height: 350px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .bodyB {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .body1 {
+        background-color: darkcyan;
+        height: 170px;
+        width: 32%;
+        margin-right: 10px;
+      }
+
+      .body2 {
+        background-color: darkcyan;
+        height: 170px;
+        width: 32%;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .body3 {
+        background-color: darkcyan;
+        height: 170px;
+        width: 32%;
+        margin-left: 10px;
+      }
+
+      .foot {
+        display: flex;
+      }
+
+      .foot1 {
+        background-color: rgb(170, 174, 174);
+        height: 170px;
+        width: 24%;
+        margin-right: 10px;
+      }
+
+      .foot2 {
+        background-color: rgb(170, 174, 174);
+        height: 170px;
+        width: 24%;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .foot3 {
+        background-color: rgb(170, 174, 174);
+        height: 170px;
+        width: 24%;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .foot4 {
+        background-color: rgb(170, 174, 174);
+        height: 170px;
+        width: 24%;
+        margin-left: 10px;
+      }
+
+      /* Tablet: 768px to 1200px */
+      @media (max-width: 1200px) and (min-width: 768px) {
+        .head {
+          flex-direction: column;
+        }
+        .head1,
+        .head2 {
+          width: 100%;
+          margin: 10px 0;
+        }
+        .bodyA {
+          height: 300px;
+        }
+        .bodyB {
+          flex-direction: row;
+        }
+        .body1,
+        .body2,
+        .body3 {
+          width: 32%;
+          margin: 0 10px;
+        }
+        .foot {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .foot1,
+        .foot2,
+        .foot3,
+        .foot4 {
+          width: 48%;
+          margin: 10px 0;
+        }
+        .foot1 {
+          margin-right: 10px;
+        }
+        .foot2 {
+          margin-left: 10px;
+        }
+        .foot3 {
+          margin-right: 10px;
+        }
+        .foot4 {
+          margin-left: 10px;
+        }
+      }
+
+      /* Mobile: < 768px */
+      @media (max-width: 767px) {
+        .head {
+          flex-direction: column;
+        }
+        .head1,
+        .head2 {
+          width: 100%;
+          margin: 10px 0;
+          height: 80px;
+        }
+        .bodyA {
+          height: 200px;
+          margin: 10px 0;
+        }
+        .bodyB {
+          flex-direction: column;
+        }
+        .body1,
+        .body2,
+        .body3 {
+          width: 100%;
+          height: 120px;
+          margin: 10px 0;
+        }
+        .foot {
+          flex-direction: column;
+        }
+        .foot1,
+        .foot2,
+        .foot3,
+        .foot4 {
+          width: 100%;
+          height: 120px;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="head1"></div>
+        <div class="head2"></div>
+      </div>
+      <div class="bodyA"></div>
+      <div class="bodyB">
+        <div class="body1"></div>
+        <div class="body2"></div>
+        <div class="body3"></div>
+      </div>
+      <div class="foot">
+        <div class="foot1"></div>
+        <div class="foot2"></div>
+        <div class="foot3"></div>
+        <div class="foot4"></div>
+      </div>
+    </div>
+  </body>
+</html>
