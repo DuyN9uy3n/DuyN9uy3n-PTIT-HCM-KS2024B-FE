@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modal Example</title>
+    <style>
+      body {
+        font-family: serif;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      /* Modal và overlay mặc định ẩn */
+      .modal,
+      .overlay {
+        display: none;
+      }
+
+      /* Modal */
+      .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2;
+        width: 80%;
+        max-width: 500px;
+      }
+
+      /* Nút đóng */
+      .close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      /* Overlay */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modal Example</h1>
+    <button id="openBtn">Open Modal</button>
+
+    <div class="modal" id="modal">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="bai4.js"></script>
+  </body>
+</html>

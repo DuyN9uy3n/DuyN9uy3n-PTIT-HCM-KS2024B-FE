@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Đăng Nhập</title>
+    <style>
+      body {
+        font-family: serif;
+        margin: 40px;
+      }
+
+      .login-container {
+        border: 2px solid black;
+        padding: 20px;
+        max-width: 500px;
+      }
+
+      label {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 10px 25px;
+        font-size: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div>
+        <label for="username">username:</label>
+        <input type="text" id="username" />
+      </div>
+
+      <div>
+        <label for="password">password:</label>
+        <input type="password" id="password" />
+      </div>
+
+      <button id="loginBtn">login</button>
+    </div>
+
+    <script src="bai6.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Danh sách nhân viên Rikkei</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      .input-group {
+        display: flex;
+        align-items: center;
+      }
+
+      .input-group label {
+        margin-right: 10px;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        width: 250px;
+      }
+
+      .add-btn-container {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      button {
+        padding: 8px 15px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button.active {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .pagination button {
+        margin: 0 5px;
+        padding: 8px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Danh sách nhân viên Rikkei</h1>
+
+    <div class="input-container">
+      <div class="input-group">
+        <label for="employeeName">tên nhân viên</label>
+        <input type="text" id="employeeName" />
+      </div>
+
+      <div class="input-group">
+        <label for="employeePosition">chức vụ</label>
+        <input type="text" id="employeePosition" />
+      </div>
+    </div>
+
+    <div class="add-btn-container">
+      <button id="addEmployeeBtn">thêm nhân viên</button>
+    </div>
+
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên</th>
+          <th>Chức vụ</th>
+        </tr>
+      </thead>
+      <tbody id="employeeList"></tbody>
+    </table>
+
+    <div class="pagination" id="pagination">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="bai10.js"></script>
+  </body>
+</html>
