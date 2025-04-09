@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thư viện ảnh với Modal</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .gallery {
+        display: flex;
+        gap: 20px;
+      }
+
+      .thumbnail {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.2s;
+      }
+
+      .thumbnail:hover {
+        transform: scale(1.05);
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      #modal-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+
+      #modal-image.error {
+        display: none;
+      }
+
+      .error-message {
+        display: none;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .error .error-message {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        src="https://tapchigiaothong.qltns.mediacdn.vn/thumb_w/640/481400261263945728/2023/9/21/pap230355fine-16953114201241045530983.jpg"
+        alt="Cá sấu"
+        class="thumbnail"
+        onclick="openModal('https://tapchigiaothong.qltns.mediacdn.vn/thumb_w/640/481400261263945728/2023/9/21/pap230355fine-16953114201241045530983.jpg')"
+      />
+      <img
+        src="https://images8.alphacoders.com/115/1154257.jpg"
+        alt="Rắn"
+        class="thumbnail"
+        onclick="openModal('https://images8.alphacoders.com/115/1154257.jpg')"
+      />
+      <img
+        src="https://images7.alphacoders.com/115/thumb-1920-1153043.jpg"
+        alt="Thỏ"
+        class="thumbnail"
+        onclick="openModal('https://images7.alphacoders.com/115/thumb-1920-1153043.jpg')"
+      />
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <img id="modal-image" src="" alt="Ảnh phóng to" />
+        <div class="error-message">Không thể tải ảnh. Vui lòng thử lại.</div>
+      </div>
+    </div>
+
+    <script>
+      function openModal(imageSrc) {
+        const modal = document.getElementById("modal");
+        const modalImage = document.getElementById("modal-image");
+        const modalContent = modal.querySelector(".modal-content");
+
+        modalContent.classList.remove("error");
+        modalImage.style.display = "block";
+
+        modalImage.src = imageSrc;
+
+        modal.style.display = "flex";
+      }
+
+      document.getElementById("modal").addEventListener("click", function (e) {
+        if (e.target === this) {
+          this.style.display = "none";
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          document.getElementById("modal").style.display = "none";
+        }
+      });
+
+      document
+        .getElementById("modal-image")
+        .addEventListener("error", function () {
+          const modalContent = this.parentElement;
+          modalContent.classList.add("error");
+          this.style.display = "none";
+        });
+    </script>
+  </body>
+</html>
