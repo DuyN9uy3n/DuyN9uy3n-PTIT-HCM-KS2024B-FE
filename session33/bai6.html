@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng dụng Thời tiết</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #0066cc;
+        margin-bottom: 30px;
+      }
+
+      .search-container {
+        margin-bottom: 20px;
+      }
+
+      input {
+        padding: 10px;
+        width: 60%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #0052a3;
+      }
+
+      .weather-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: left;
+        display: none;
+      }
+
+      .city-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .weather-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .temperature {
+        font-size: 48px;
+        margin-right: 20px;
+      }
+
+      .details {
+        line-height: 1.6;
+      }
+
+      .error-message {
+        color: red;
+        margin-top: 20px;
+        display: none;
+      }
+
+      .weather-icon {
+        font-size: 48px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Ứng dụng Thời tiết</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Nhập tên thành phố..."
+          aria-label="Tên thành phố"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+
+      <div id="errorMessage" class="error-message">
+        Thành phố không tồn tại trong cơ sở dữ liệu!
+      </div>
+
+      <div id="weatherCard" class="weather-card">
+        <div id="cityName" class="city-name"></div>
+        <div class="weather-info">
+          <div id="weatherIcon" class="weather-icon"></div>
+          <div id="temperature" class="temperature"></div>
+          <div class="details">
+            <div id="description"></div>
+            <div id="humidity"></div>
+            <div id="windSpeed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bai6.js"></script>
+  </body>
+</html>
