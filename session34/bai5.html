@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Nhân Viên</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .employee-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 500px;
+      }
+
+      input {
+        margin: 10px 0;
+        padding: 8px;
+        width: calc(100% - 16px);
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 10px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #218838;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="employee-container">
+      <h1>Quản Lý Nhân Viên</h1>
+      <input
+        type="text"
+        id="employeeName"
+        placeholder="Tên nhân viên"
+        required
+      />
+      <input type="text" id="employeePosition" placeholder="Chức vụ" required />
+      <button id="addEmployee">Thêm nhân viên</button>
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Chức vụ</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="employeeList"></tbody>
+      </table>
+    </div>
+    <script src="bai5.js"></script>
+  </body>
+</html>
